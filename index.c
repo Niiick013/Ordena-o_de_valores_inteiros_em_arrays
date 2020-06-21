@@ -9,6 +9,16 @@
 #include <stdio.h>
 
 int main() {
+    int i, k, aux;
+    int vetor [5];
+
+    system("clear"); //Limpa a tela
+    for(i=0; i<5; i++) {
+        printf("Digite o %dº número: ", i+1);
+        scanf("%d", &vetor[i]);
+
+    } //Recebe os valores
+
     
 
     return 0;
