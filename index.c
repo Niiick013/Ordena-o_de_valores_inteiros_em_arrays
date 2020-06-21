@@ -10,16 +10,27 @@
 
 int main() {
     int i, k, aux;
-    int vetor [5];
+    int lista [5];
 
     system("clear"); //Limpa a tela
     for(i=0; i<5; i++) {
         printf("Digite o %dº número: ", i+1);
-        scanf("%d", &vetor[i]);
+        scanf("%d", &lista[i]);
 
     } //Recebe os valores
 
-    
+    for(i=0; i<=5; i++) {
+        for(j=i; j<5; j++) {
+            if(lista[i] > lista[j]) {
+                aux = lista[i];
+                lista[i] = lista[j];
+                lista[j] = aux;
+
+            }
+
+        }
+
+    } //Ordena a posição dos arrays
 
     return 0;
 
