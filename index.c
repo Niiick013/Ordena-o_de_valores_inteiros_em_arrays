@@ -9,10 +9,14 @@
 #include <stdio.h>
 
 int main() {
-    int i, k, aux;
+    int i, j, aux;
     int lista [5];
 
     system("clear"); //Limpa a tela
+    printf("=========\n");
+    printf(" ENTRADA \n");
+    printf("=========\n\n");
+
     for(i=0; i<5; i++) {
         printf("Digite o %dº número: ", i+1);
         scanf("%d", &lista[i]);
@@ -26,11 +30,21 @@ int main() {
                 lista[i] = lista[j];
                 lista[j] = aux;
 
-            }
+            } //Ordena a posição dos arrays
 
         }
 
-    } //Ordena a posição dos arrays
+    }
+    
+    system("clear");
+    printf("=======\n");
+    printf(" SAÍDA \n");
+    printf("=======\n");
+
+    for(i=0; i<5; i++) {
+        printf("%dº posição: %d\n", i+1, lista[i]);
+
+    } //Imprime os valores na tela
 
     return 0;
 
